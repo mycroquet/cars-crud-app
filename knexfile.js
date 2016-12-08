@@ -2,12 +2,12 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/cars'
+    connection: process.env.DATABASE_URL
   },
 
   production: {
     client: 'pg',
-    connection: process.env.DATABASE_URL
+    connection: process.env.'https://git.heroku.com/cars-crud-app.git'
   }
 
 };
